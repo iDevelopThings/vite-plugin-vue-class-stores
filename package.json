@@ -8,9 +8,14 @@
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags",
     "deploy-update": "./dist.sh"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
-    "url": "https://github.com/iDevelopThings/vite-plugin-vue-class-store",
+    "url": "https://github.com/iDevelopThings/vite-plugin-vue-class-stores",
     "type": "github"
   },
   "author": {
