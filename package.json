@@ -24,7 +24,7 @@
     },
     "license": "MIT",
     "dependencies": {
-        "vue-class-stores-generators": "^0.0.75"
+        "vue-class-stores-generators": "^0.0.76"
     },
     "devDependencies": {
         "@types/rollup": "^0.54.0",
