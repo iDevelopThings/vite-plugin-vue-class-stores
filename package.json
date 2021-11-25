@@ -1,34 +1,34 @@
 {
-  "name": "vite-plugin-vue-class-stores",
-  "version": "0.0.65",
-  "description": "Use classes to handle state in vuejs. This is a webpack plugin that will generate type definitions and globally init your stores.\n\nTopics\nResources\n",
-  "scripts": {
-    "build-package": "tsc --build tsconfig.prod.json --clean && tsc --build tsconfig.prod.json",
-    "build-package-watch": "tsc --build tsconfig.prod.json --clean && tsc --build tsconfig.prod.json --watch",
-    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags",
-    "deploy-update": "./dist.sh"
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "repository": {
-    "url": "https://github.com/iDevelopThings/vite-plugin-vue-class-stores",
-    "type": "github"
-  },
-  "author": {
-    "name": "iDevelopThings",
-    "url": "https://github.com/iDevelopThings"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "vue-class-stores-generators": "^0.0.69"
-  },
-  "devDependencies": {
-    "@types/rollup": "^0.54.0",
-    "typescript": "^4.5.2",
-    "vite": "^2.6.14"
-  }
+    "name": "vite-plugin-vue-class-stores",
+    "version": "0.0.64",
+    "description": "Use classes to handle state in vuejs. This is a webpack plugin that will generate type definitions and globally init your stores.\n\nTopics\nResources\n",
+    "scripts": {
+        "build-package": "tsc --build tsconfig.prod.json --clean && tsc --build tsconfig.prod.json",
+        "build-package-watch": "tsc --build tsconfig.prod.json --clean && tsc --build tsconfig.prod.json --watch",
+        "postpublish": "PACKAGE_VERSION=$(cat package.json | grep version | head -1 | awk -F: '{ print $2 }' | sed 's/[\",]//g' | tr -d '[[:space:]]') && git tag $PACKAGE_VERSION && git push --tags",
+        "deploy-update": "./dist.sh"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": {
+        "url": "https://github.com/iDevelopThings/vite-plugin-vue-class-stores",
+        "type": "github"
+    },
+    "author": {
+        "name": "iDevelopThings",
+        "url": "https://github.com/iDevelopThings"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "vue-class-stores-generators": "^0.0.71"
+    },
+    "devDependencies": {
+        "@types/rollup": "^0.54.0",
+        "typescript": "^4.5.2",
+        "vite": "^2.6.14"
+    }
 }
